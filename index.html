@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FairySeller</title>
+    <link rel="icon" href="imegs/logo_png.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header class="header">
+  <div class="alert">
+    <div class="container">
+      <p class="alert_text">Welcome To Fairy World🌟✨</p>
+    </div>
+  </div>
+
+  <div class="header_top">
+    <div class="container">
+      <button class="nav_open_btn" aria-label="Open Menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="input_wrapper">
+        <input type="search" class="search" name="search" placeholder="search products">
+        <button class="search_submit" aria-label="search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+      <a href="#" class="logo">
+        <img src="imegs/logo_png.png" alt="logo_png" width="179" height="179">
+      </a>
+
+      <div class="header_action">
+        <button class="header_action_btn" aria-label="User">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </button>
+
+        <button class="header_action_btn" aria-label="favorite item">
+          <ion-icon name="heart-outline"></ion-icon>
+          <span class="btn_badge">0</span>
+        </button>
+
+        <button class="header_action_btn" aria-label="Cart item">
+          <data value="" class="btn_text">0.00$</data>
+          <ion-icon name="bag-handle-outline"></ion-icon>
+          <span class="btn_badge">0</span>
+        </button>
+      </div>
+
+      <nav class="navbar">
+        <ul class="navbar_list">
+          <li><a href="#" class="navbar_link has_after">Home</a></li>
+          <li><a href="#" class="navbar_link has_after">Collection</a></li>
+          <li><a href="#" class="navbar_link has_after">Shop</a></li>
+          <li><a href="#" class="navbar_link has_after">Offer</a></li>
+          <li><a href="#" class="navbar_link has_after">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Sidebar ===== -->
+<div class="sidebar">
+  <div class="mobile-navbar" data-navbar>
+    <div class="wrapper">
+      <a href="#" class="logo">
+        <img src="imegs/logo_png.png" alt="logo_png" width="129" height="129">
+      </a>
+      <button class="nav_close_btn" aria-label="close-menu" data-nav-toggler>
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </button>
+    </div>
+
+    <ul class="navbar_list">
+      <li><a href="#" class="navbar_link" data-nav-link>Home</a></li>
+      <li><a href="#" class="navbar_link" data-nav-link>Collection</a></li>
+      <li><a href="#" class="navbar_link" data-nav-link>Shop</a></li>
+      <li><a href="#" class="navbar_link" data-nav-link>Offer</a></li>
+      <li><a href="#" class="navbar_link" data-nav-link>Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="overlay" data-nav-toggler data-overlay></div>
+</div>
+
+<main>
+  <article>
+
+    <!-- ===== Hero ===== -->
+    <section class="section hero" id="home" aria-label="hero" data-section>
+      <div class="container">
+        <ul class="has_scrollbar">
+
+          <li class="scrollbar_item">
+            <div class="hero_card has_bg_image" style="background-image: url(imegs/banner_1.jpg);">
+              <div class="card-content">
+                <h1 class="h1 hero_title">Best Seller</h1>
+                <p class="hero_text">Hi little girl <br>you want to know secret?</p>
+                <p class="price">Starting at 199$</p>
+                <a href="#" class="btn btn_primary">Shop Now</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="hero_card has_bg_image" style="background-image: url(imegs/banner_2.jpg);">
+              <div class="card-content">
+                <h1 class="h1 hero_title">What's New?</h1>
+                <p class="hero_text">Hi little girl <br>you want to know secret?</p>
+                <p class="price">Starting at 199$</p>
+                <a href="#" class="btn btn_primary">Shop Now</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="hero_card has_bg_image" style="background-image: url(imegs/banner.jpg);">
+              <div class="card-content">
+                <h1 class="h1 hero_title">Discover Now 🔥</h1>
+                <p class="hero_text">Hi little girl <br>you want to know secret?</p>
+                <p class="price">Starting at 199$</p>
+                <a href="#" class="btn btn_primary">Shop Now</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Collection ===== -->
+    <section class="section collection" id="collection" aria-label="collection">
+      <div class="container">
+        <ul class="collection_list">
+
+          <li>
+            <div class="collection_card hasbefore hover:shine">
+              <div class="full_page">
+                <h2 class="h2 card_title">DRESS Collection</h2>
+                <p class="card_text">Starting at 199$</p>
+                <a href="#" class="btn_link"><span class="span">Shop Now ✨</span></a>
+                <div class="has_bg_image" style="background-image: url(imegs/banner_dress.jpg);"></div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="collection_card hasbefore hover:shine">
+              <div class="full_page">
+                <h2 class="h2 card_title">TOP Collection</h2>
+                <p class="card_text">Starting at 199$</p>
+                <a href="#" class="btn_link"><span class="span">Shop Now ✨</span></a>
+                <div class="has_bg_image" style="background-image: url(imegs/banner_top.jpg);"></div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="collection_card hasbefore hover:shine">
+              <div class="full_page">
+                <h2 class="h2 card_title">SKIRT Collection</h2>
+                <p class="card_text">Starting at 199$</p>
+                <a href="#" class="btn_link"><span class="span">Shop Now ✨</span></a>
+                <div class="has_bg_image" style="background-image: url(imegs/banner_skirt.jpg);"></div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Shop ===== -->
+    <section class="section shop" id="shop" aria-label="shop" data-section>
+      <div class="container">
+
+        <div class="title_wrapper">
+          <h2 class="h2 section_title">Our Seller</h2>
+          <a href="#" class="btn_link"><span class="span">Shop All Products🔥</span></a>
+        </div>
+
+        <ul class="has_scrollbar">
+
+          <!-- ===== Product Card ===== -->
+
+          <!--=== DRESS ===-->
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/dress_1.jpg" alt="dress_1" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge" aria-label="5% off">-5%</span>
+
+                <div class="card_action">
+                  <button class="action_btn" aria-label="add to cart">
+                    <ion-icon name="bag-outline"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card_action">
+                  <button class="action_btn" aria-label="add to Wishlist">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card_action">
+                  <button class="action_btn" aria-label="Compare">
+                    <ion-icon name="swap-vertical-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card_content">
+                <div class="price">
+                  <del class="del">490$</del>
+                  <span class="span">460$</span>
+                </div>
+                <h3><a href="#" class="card_title">Sage Dress</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper" aria-label="5 Star rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/dress_2.jpg" alt="dress_2" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">490$</del><span class="span">460$</span></div>
+                <h3><a href="#" class="card_title">Mint Y2K Dress</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/dress_3.jpg" alt="dress_3" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">490$</del><span class="span">460$</span></div>
+                <h3><a href="#" class="card_title">Blossom Dress</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/dress_4.jpg" alt="dress_4" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">450$</del><span class="span">427$</span></div>
+                <h3><a href="#" class="card_title">Ivory Dress</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!--=== TOP ===-->
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/top_1.jpg" alt="top_1" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">250$</del><span class="span">237$</span></div>
+                <h3><a href="#" class="card_title">Moon Y2K Top</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/top_2.jpg" alt="top_2" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">300$</del><span class="span">285$</span></div>
+                <h3><a href="#" class="card_title">Olive Fairy Top</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/top_3.jpg" alt="top_3" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">300$</del><span class="span">285$</span></div>
+                <h3><a href="#" class="card_title">Cherry Y2K Top</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/top_4.jpg" alt="top_4" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">300$</del><span class="span">285$</span></div>
+                <h3><a href="#" class="card_title">Baby Doll Top</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/top_5.jpg" alt="top_5" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">300$</del><span class="span">285$</span></div>
+                <h3><a href="#" class="card_title">Rose Fairy Top</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/top_6.jpg" alt="top_6" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">300$</del><span class="span">285$</span></div>
+                <h3><a href="#" class="card_title">Sky Y2K Top</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!--SKIRT-->
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/skirt_1.jpg" alt="skirt_1" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">200$</del><span class="span">190$</span></div>
+                <h3><a href="#" class="card_title">Cream Skirt</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/skirt_2.jpg" alt="skirt_2" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">200$</del><span class="span">190$</span></div>
+                <h3><a href="#" class="card_title">Pink Y2K Skirt</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/skirt_3.jpg" alt="skirt_3" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">200$</del><span class="span">190$</span></div>
+                <h3><a href="#" class="card_title">Garden Skirt</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="scrollbar_item">
+            <div class="shop_card">
+              <div class="card_banner img_holder" style="--width: 540; --height: 720;">
+                <img src="imegs/skirt_4.jpg" alt="skirt_4" class="img_cover" width="540" height="720" loading="lazy">
+                <span class="badge">-5%</span>
+                <div class="card_action"><button class="action_btn"><ion-icon name="bag-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="heart-outline"></ion-icon></button></div>
+                <div class="card_action"><button class="action_btn"><ion-icon name="swap-vertical-outline"></ion-icon></button></div>
+              </div>
+              <div class="card_content">
+                <div class="price"><del class="del">200$</del><span class="span">190$</span></div>
+                <h3><a href="#" class="card_title">Blue Fairy Skirt</a></h3>
+                <div class="card_rating">
+                  <div class="rating_wrapper">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                  <p class="rating_text">129.63K</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+  </article>
+</main>
+
+
+    
+<script src="script.js" defer></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+<footer>
+    ♡ Fairy Outfit © 4026 · enter the magical closet ♡
+</footer>
+</html>
